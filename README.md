@@ -1,3 +1,5 @@
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![MySQL](https://img.shields.io/badge/Database-MySQL-blue.svg)
 # 🧾 Print-on-Demand Order Manager (PODOM)
 
 This is a MySQL database project designed for internship and academic evaluation.  
