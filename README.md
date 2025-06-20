@@ -1,83 +1,77 @@
-🧾 Print-on-Demand Order Manager (PODOM)
-This is a MySQL database project designed for internship and academic evaluation. It manages users, products, custom orders, inventory, returns, and refunds. It uses clean schema design, normalized structure, and includes essential SQL queries for order management and reporting.
+# 🧾 Print-on-Demand Order Manager (PODOM)
 
-🔍 What It Does
-Stores user, product, and inventory information
+This is a MySQL database project designed for internship and academic evaluation.  
+It manages users, products, custom orders, inventory, returns, and refunds.  
+It uses clean schema design, normalized structure, and includes essential SQL queries for order management and reporting.
+
+---
+
+## 🔍 What It Does
+
+Stores user, product, and inventory information.
 
 Handles:
 
-👤 Customer orders
-
-🎨 Custom print requests
-
-🚚 Multi-step order statuses
-
-🔁 Returns & 💸 Refunds
+- 👤 Customer orders  
+- 🎨 Custom print requests  
+- 🚚 Multi-step order statuses  
+- 🔁 Returns & 💸 Refunds  
 
 Ensures clean structure with:
 
-📦 orderItems table for itemized order data
+- 📦 `orderItems` table for itemized order data  
+- 📄 `orderStatusHistory` for audit trail  
 
-📄 orderStatusHistory for audit trail
-
-Uses soft deletes to avoid data loss
+Uses soft deletes to avoid data loss.
 
 Includes 5 key SQL queries:
 
-📥 Place a new order
+- 📥 Place a new order  
+- 🔄 Update order status  
+- 🔍 Get orders for a user  
+- 📊 View inventory levels  
+- 📈 Report orders by status  
 
-🔄 Update order status
+---
 
-🔍 Get orders for a user
+## 💡 Features Implemented
 
-📊 View inventory levels
+### ✅ Core Features
+- User management (`users`)  
+- Product catalog (`products`)  
+- Order processing (`orders`, `orderItems`)  
+- Inventory tracking (`inventory`)  
+- Custom print details  
+- Order status updates  
+- Audit trail of changes  
 
-📈 Report orders by status
+### 🎁 Bonus Features
+- Multiple shipping addresses (`shippingAddresses`)  
+- Order returns (`orderReturn`)  
+- Refunds (`refunds`)  
+- Soft delete support (`isDeleted`)  
+- Reporting by status  
 
-💡 Features Implemented
-✅ Core Features
-User management (users)
+---
 
-Product catalog (products)
+## 🧠 Design Notes
 
-Order processing (orders, orderItems)
+- 🧾 Used `camelCase` naming to avoid keyword conflicts (e.g., `name`, `order`)  
+- ✅ Normalized to **3rd Normal Form** for relational integrity  
 
-Inventory tracking (inventory)
+---
 
-Custom print details
+## 🧪 Sample Data
 
-Order status updates
+- 👤 2 users (customer & admin)  
+- 👕 2 products (with and without discount)  
+- ✅ 1 order with multiple items  
+- 🚚 Multiple order status entries  
+- 🔁 One return + 💸 one refund  
 
-Audit trail of changes
+---
 
-🎁 Bonus Features
-Multiple shipping addresses (shippingAddresses)
+## 🧑‍💻 Author
 
-Order returns (orderReturn)
-
-Refunds (refunds)
-
-Soft delete support (isDeleted)
-
-Reporting by status
-
-🧠 Design Notes
-🧾 Used camelCase naming to avoid keyword conflicts (e.g., name, order)
-
-✅ Normalized to 3rd Normal Form
-
-🧪 Sample Data
-👤 2 users (customer & admin)
-
-👕 2 products (with and without discount)
-
-✅ 1 order with multiple items
-
-🚚 Multiple statuses
-
-🔁 One return + 💸 one refund
-
-🧑‍💻 Author
-Uday Pandey
+**Uday Pandey**  
 Built as part of an internship assignment and refined with best practices in relational database design.
-
